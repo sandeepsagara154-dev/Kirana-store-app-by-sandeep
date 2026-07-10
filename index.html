@@ -191,6 +191,15 @@
 </style>
 </head>
 <body>
+  <script>
+  const sitePassword = "sandeep123";
+  const entered = prompt("Password enter cheyandi:");
+  if (entered !== sitePassword) {
+    document.body.innerHTML = "<h1 style='text-align:center; margin-top:50px; font-family:sans-serif;'>Access Denied ❌</h1>";
+    document.title = "Access Denied";
+    throw new Error("Wrong password");
+  }
+  </script>
 
 <header>
   <div class="nav">
